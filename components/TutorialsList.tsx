@@ -49,7 +49,7 @@ export default function TutorialsList({ articles }: { articles: ArticleMeta[] })
           <Link
             key={article.slug}
             href={`/tutorials/${article.slug}`}
-            className="bg-white rounded-2xl border border-warm-100 overflow-hidden hover:shadow-lg transition-shadow"
+            className="bg-white rounded-2xl border border-warm-100 overflow-hidden hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
           >
             <div className="h-40 bg-gradient-to-br from-warm-200 to-pink-100 flex items-center justify-center">
               <span className="text-4xl">📄</span>

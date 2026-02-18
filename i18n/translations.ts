@@ -45,7 +45,23 @@ const translations = {
     title: { zh: "资源推荐", en: "Resources" },
     subtitle: { zh: "精选优质 AI 工具和资源，助你高效工作", en: "Curated AI tools and resources to boost your productivity" },
     visitLink: { zh: "访问链接", en: "Visit" },
+    clearFilter: { zh: "清除筛选", en: "Clear" },
   },
+
+  // Resource tag labels (bilingual)
+  tagLabels: {
+    free: { zh: "免费", en: "Free" },
+    freemium: { zh: "免费增值", en: "Freemium" },
+    paid: { zh: "付费", en: "Paid" },
+    chinese: { zh: "中文", en: "Chinese" },
+    english: { zh: "英文", en: "English" },
+    beginner: { zh: "入门友好", en: "Beginner" },
+    writing: { zh: "写作", en: "Writing" },
+    coding: { zh: "编程", en: "Coding" },
+    design: { zh: "设计", en: "Design" },
+    research: { zh: "搜索研究", en: "Research" },
+    productivity: { zh: "效率工具", en: "Productivity" },
+  } as Record<string, { zh: string; en: string }>,
 
   // About Page
   about: {
@@ -80,12 +96,12 @@ const translations = {
 
   // Resource data (bilingual)
   resourceItems: [
-    { id: 1, name: "ChatGPT", description: { zh: "OpenAI 的对话式 AI 助手，适合文本生成、翻译、编程等多种场景", en: "OpenAI's conversational AI assistant for text generation, translation, coding and more" }, link: "#" },
-    { id: 2, name: "Claude", description: { zh: "Anthropic 的 AI 助手，擅长长文分析和复杂推理", en: "Anthropic's AI assistant, excelling at long-form analysis and complex reasoning" }, link: "#" },
-    { id: 3, name: "Midjourney", description: { zh: "强大的 AI 图像生成工具，适合创意设计和视觉内容", en: "Powerful AI image generation tool for creative design and visual content" }, link: "#" },
-    { id: 4, name: "Notion AI", description: { zh: "集成 AI 的知识管理和协作平台，提升团队效率", en: "AI-integrated knowledge management and collaboration platform" }, link: "#" },
-    { id: 5, name: "Perplexity", description: { zh: "AI 驱动的搜索引擎，快速获取准确信息", en: "AI-powered search engine for fast and accurate information retrieval" }, link: "#" },
-    { id: 6, name: "Cursor", description: { zh: "AI 辅助编程的代码编辑器，大幅提升开发效率", en: "AI-powered code editor that dramatically boosts development productivity" }, link: "#" },
+    { id: 1, name: "ChatGPT", tags: ["freemium", "chinese", "english", "beginner", "writing", "coding"], description: { zh: "OpenAI 的对话式 AI 助手，适合文本生成、翻译、编程等多种场景", en: "OpenAI's conversational AI assistant for text generation, translation, coding and more" }, link: "#" },
+    { id: 2, name: "Claude", tags: ["freemium", "chinese", "english", "writing", "coding", "research"], description: { zh: "Anthropic 的 AI 助手，擅长长文分析和复杂推理", en: "Anthropic's AI assistant, excelling at long-form analysis and complex reasoning" }, link: "#" },
+    { id: 3, name: "Midjourney", tags: ["paid", "english", "design"], description: { zh: "强大的 AI 图像生成工具，适合创意设计和视觉内容", en: "Powerful AI image generation tool for creative design and visual content" }, link: "#" },
+    { id: 4, name: "Notion AI", tags: ["freemium", "chinese", "english", "beginner", "productivity"], description: { zh: "集成 AI 的知识管理和协作平台，提升团队效率", en: "AI-integrated knowledge management and collaboration platform" }, link: "#" },
+    { id: 5, name: "Perplexity", tags: ["free", "english", "beginner", "research"], description: { zh: "AI 驱动的搜索引擎，快速获取准确信息", en: "AI-powered search engine for fast and accurate information retrieval" }, link: "#" },
+    { id: 6, name: "Cursor", tags: ["freemium", "english", "coding"], description: { zh: "AI 辅助编程的代码编辑器，大幅提升开发效率", en: "AI-powered code editor that dramatically boosts development productivity" }, link: "#" },
   ],
 
   // Timeline data (bilingual)
